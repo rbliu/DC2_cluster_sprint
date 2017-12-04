@@ -6,7 +6,7 @@ TODO List:
 
 - [x] Get some preliminary DC2 images. (Keep tracking this issue:https://github.com/LSSTDESC/DC2_Repo/issues/33)
 
-- [ ] [Initial tests](https://github.com/rbliu/DC2_cluster_sprint/issues) with one single sensor to obtain feasible configurations.
+- [ ] [Initial tests](https://github.com/rbliu/DC2_cluster_sprint/issues/1) with one single sensor to obtain feasible configurations.
 
 - [ ] Tests with one single raft to check if the measurements in each sensor look reasonable.
 
