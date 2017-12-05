@@ -4,6 +4,16 @@ This repository is used to describe work done during the Argonne Sprint/Hack wee
 
 *Contributor: Ian Dell'Antonio, Binyang Liu, Bhishan Poudel*
 
+## Quick Start
+
+- [Install DM Stack with v13.0 (or 12.0) version](https://pipelines.lsst.io/v/13-0/install/conda.html)
+
+- [Clone and build obs_file](https://github.com/rbliu/Memo-Linux/blob/master/how_to_run_obs_file.md)
+
+- To access the protoDC2 catalog, log in to nersc: https://jupyter.nersc.gov and follow this [tutorial notebook](https://github.com/LSSTDESC/gcr-catalogs/blob/master/examples/GCRCatalogs%20Demo.ipynb)
+
+
+
 ## TODO List:
 
 - [x] Get some preliminary protoDC2 images. (Keep tracking this issue:https://github.com/LSSTDESC/DC2_Repo/issues/33)
