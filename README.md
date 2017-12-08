@@ -18,10 +18,16 @@ This repository is used to describe work done during the Argonne Sprint/Hack wee
 
 - [x] Get some preliminary protoDC2 images. (Keep tracking this issue:https://github.com/LSSTDESC/DC2_Repo/issues/33)
 
-- [ ] [Initial tests](https://github.com/rbliu/DC2_cluster_sprint/issues/1) with one single sensor to obtain feasible configurations.
+- [x] [Initial tests](https://github.com/rbliu/DC2_cluster_sprint/issues/1) with one single sensor to obtain feasible configurations.
 
-- [ ] Tests with one single raft to check if the measurements in each sensor look reasonable.
+- [x] Tests with one single raft to check if the measurements in each sensor look reasonable.
 
-- [ ] Run obs_file on more rafts.
+- [x] Plot convergence map from [protoDC2 catalog](https://github.com/LSSTDESC/gcr-catalogs/blob/master/examples/GCRCatalogs%20Demo.ipynb).
 
-- [ ] Plot mass map with shear measurements.
+- [x] Plot convergence map from shape measurements.
+
+- [x] Extract redshift for one cluster from protoDC2 catalog.
+
+- [ ] Match the positions in the redshift catalog with the shape measurement catalog.
+
+- [ ] Feed into [clusters pipeline](https://github.com/nicolaschotard/Clusters) and obtain mass estimate for clusters.
