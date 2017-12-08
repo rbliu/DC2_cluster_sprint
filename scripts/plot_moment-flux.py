@@ -1,4 +1,5 @@
 # This piece of code aims to plot second moments of detected objects againt their flux.
+# by Binyang Liu, Dec 5, 2017
 
 import lsst.afw.display
 import lsst.afw.image
@@ -8,7 +9,7 @@ import os
 from matplotlib import pylab as plt
 import pylab
 
-exposure = lsst.afw.image.ExposureF("/Users/rliu/Downloads/Hackweek/DC2/lsst_e_138143_f5_R22_S11_E000.fits.gz")
+exposure = lsst.afw.image.ExposureF("/Users/rliu/Downloads/Hackweek/DC2/eimages/lsst_e_138143_f5_R22_S11_E000.fits.gz")
 catalog = lsst.afw.table.SourceCatalog.readFits("/Users/rliu/Downloads/Hackweek/DC2/output/src/lsst_e_138143_f5_R22_S11_E000/src.fits")
 
 xx = []
@@ -28,15 +29,16 @@ flux = numpy.array(flux)
 print "There are %i deblended children sources." %(len(xx))
 
 plt.gca()
-plt.scatter(flux, xx+yy, alpha=.5, label='ixx+iyy')
+plt.scatter(numpy.log(flux), xx+yy, alpha=.5, label='ixx+iyy')
+#plt.semilogx(flux, xx+yy,label='ixx+iyy')
 # plt.scatter(flux, xx, alpha=.5, label='ixx')
 # plt.scatter(flux, yy, alpha=.5, label='iyy')
 # plt.scatter(flux, xy, alpha=.5, label='ixy')
 
-plt.xlabel('SDSS_Flux')
+plt.xlabel('SDSS_Flux(log)')
 plt.ylabel('SDSS_SecondMoment')
 #plt.loc(1)
 plt.legend(loc='upper right')
-pylab.xlim([-0.01e7,1.6e7])
-pylab.ylim([-20,300])
+# pylab.xlim([-0.01e7,1.6e7])
+# pylab.ylim([-20,300])
 plt.show()
